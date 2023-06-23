@@ -34,46 +34,50 @@ function Header() {
               </div>
             </Link>
           </div>
-
-          <label for="menu-toggle" class="pointer-cursor md:hidden block">
-            <svg
-              class="fill-current text-white"
-              xmlns="http://www.w3.org/2000/svg"
-              width="20"
-              height="20"
-              viewBox="0 0 20 20"
+          
+            <label
+              for="menu-toggle"
+              class="pointer-cursor md:hidden block border-b border-b-[#f1cf6f] border-opacity-10"
             >
-              <title>menu</title>
-              <path d="M0 3h20v2H0V3zm0 6h20v2H0V9zm0 6h20v2H0v-2z"></path>
-            </svg>
-          </label>
-          <input class="hidden" type="checkbox" id="menu-toggle" />
+              <svg
+                class="fill-current text-white"
+                xmlns="http://www.w3.org/2000/svg"
+                width="20"
+                height="20"
+                viewBox="0 0 20 20"
+              >
+                <title>menu</title>
+                <path d="M0 3h20v2H0V3zm0 6h20v2H0V9zm0 6h20v2H0v-2z"></path>
+              </svg>
+            </label>
+            <input class="hidden " type="checkbox" id="menu-toggle" />
 
-          <div
-            class="hidden md:flex md:items-center md:w-auto w-full"
-            id="menu"
-          >
-            <nav>
-              <ul class="md:flex items-center justify-between text-base gap-10 pt-8 md:pt-0">
-                <li className="md:mb-0 mb-3">
-                  <Link
-                    to="/nft-mint"
-                    className="text-white font-medium text-base hover:text-[#8dc9be]  transition-all"
-                  >
-                    NFT Mint
-                  </Link>
-                </li>
-                <li>
-                  <Link
-                    to="/staking"
-                    className="text-white font-medium text-base hover:text-[#8dc9be]  transition-all"
-                  >
-                    Staking
-                  </Link>
-                </li>
-              </ul>
-            </nav>
-          </div>
+            <div
+              class="hidden md:flex md:items-center md:w-auto w-full"
+              id="menu"
+            >
+              <nav>
+                <ul class="md:flex items-center justify-between text-base gap-10 pt-8 md:pt-0">
+                  <li className="md:mb-0 mb-3">
+                    <Link
+                      to="/nft-mint"
+                      className="text-white font-medium text-base hover:text-[#8dc9be]  transition-all"
+                    >
+                      NFT Mint
+                    </Link>
+                  </li>
+                  <li>
+                    <Link
+                      to="/staking"
+                      className="text-white font-medium text-base hover:text-[#8dc9be]  transition-all"
+                    >
+                      Staking
+                    </Link>
+                  </li>
+                </ul>
+              </nav>
+            </div>
+          
         </header>
       </div>
     );
