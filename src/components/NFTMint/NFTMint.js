@@ -104,7 +104,7 @@ function NFTMint() {
                       min={0}
                       value={value}
                       onChange={handleChange}
-                      className="bg-[#0d1322] border border-[#3ECCB0]  border-opacity-10 outline-none active:outline-none text-white w-full px-1 py-2 focus:border-teal-500 "
+                      className="bg-[#0d1322] border border-[#3ECCB0]  border-opacity-10 outline-none active:outline-none text-white w-full px-3 py-2 focus:border-teal-500 "
                     />
                     <button
                       onClick={handlePlus}
